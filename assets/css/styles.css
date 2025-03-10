@@ -181,12 +181,11 @@ img{
 }
 
 .nav__link, .nav__logo, .nav__toggle{
-    color: var(--text-color);
+  color: var(--text-color);
   font-weight: var(--font-medium);
 }
 
 .nav__logo:hover{
-  font-size:25px;
   color: var(--first-color);
 }
 
@@ -251,7 +250,7 @@ img{
 
 /*========== HOME ==========*/
 .home__container{
-  height: 0px;
+  height: calc(100vh - var(--header-height));
   align-content: center;
 }
 
@@ -330,7 +329,6 @@ img{
 
 /*========== MENU ==========*/
 .menu__container{
-  heigth:0px;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
@@ -561,24 +559,3 @@ img{
         height: 640px;
     }
 }
- .hand {
-	    height: 0px;
-            font-size: 70px;
-            cursor: pointer;
-            animation: blink 1s infinite;
-        }
-
-        /* Blinking animation */
-        @keyframes blink {
-            0%, 50%, 100% {
-                opacity: 1;
-            }
-            25%, 75% {
-                opacity: 0;
-            }
-        }
-
-        /* Optional: Add hover effect */
-        .hand:hover {
-            transform: scale(1.1);
-        }
