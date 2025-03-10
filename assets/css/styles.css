@@ -552,6 +552,27 @@ img{
     column-gap: 7rem;
   }
 }
+.hand {
+	    height: 0px;
+            font-size: 70px;
+            cursor: pointer;
+            animation: blink 1s infinite;
+        }
+
+        /* Blinking animation */
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+
+        /* Optional: Add hover effect */
+        .hand:hover {
+            transform: scale(1.1);
+        }
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
